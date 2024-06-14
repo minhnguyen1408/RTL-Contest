@@ -1,1 +1,10 @@
-D_flip_flop /
+aes_128 expand_key_128 one_round final_round /
+expand_key_128 S4 /
+one_round table_lookup /
+final_round S4 /
+table_lookup T /
+S4 S /
+T S xS /
+S /
+xS /
+test_aes_128; aes_128 /
